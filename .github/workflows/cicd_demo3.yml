@@ -1,4 +1,4 @@
-name: newDemo
+name: cicd_demo3
     
 on: push
 

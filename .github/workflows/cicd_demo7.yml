@@ -1,5 +1,5 @@
-name: newDemo
-    
+name: cicd_demo7
+
 on: push
 
 jobs:
