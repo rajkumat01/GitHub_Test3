@@ -11,3 +11,4 @@ AAA;Workspace4
 AAA;Workspace5
 AAA;Workspace6
 AAA;Workspace7
+AAA;Workspace8
