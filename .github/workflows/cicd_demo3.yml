@@ -1,6 +1,7 @@
-name: cicd_demo3
-    
-on: push
+name: cicd_demo
+
+on:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -108,3 +109,4 @@ jobs:
           timeout: '3600'
       - name: Run deployment scripts
         run: echo Completed Deployment.
+        
