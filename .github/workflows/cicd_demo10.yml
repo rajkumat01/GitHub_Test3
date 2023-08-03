@@ -1,7 +1,6 @@
-name: cicd_demo10
-
-on:
-  workflow_dispatch:
+name: cicd_dem21312o
+    
+on: push
 
 jobs:
   build:
@@ -96,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:     
       - name: Custom Change
-        uses: ServiceNow/servicenow-devops-change@v1.34.2
+        uses: ServiceNow/servicenow-devops-change@dev
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -109,4 +108,3 @@ jobs:
           timeout: '3600'
       - name: Run deployment scripts
         run: echo Completed Deployment.
-        
