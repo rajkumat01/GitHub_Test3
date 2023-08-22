@@ -1,11 +1,12 @@
-name: cicd_demo8
-    
-on: push
+name: cicd_demo
+
+on:
+  workflow_dispatch:
 
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
@@ -64,7 +65,7 @@ jobs:
   integrationTest:
     needs: build
     name: Integration Tests
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:  
       - name: Register Artifact
         uses: ServiceNow/servicenow-devops-register-artifact@v1.34.2
@@ -92,10 +93,10 @@ jobs:
   deploy:
     needs: integrationTest
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:     
       - name: Custom Change
-        uses: ServiceNow/servicenow-devops-change@dev
+        uses: ServiceNow/servicenow-devops-change@scratch_STRY55387839
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -103,8 +104,9 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Deploy'
-          change-request: '{"setCloseCode":"true","attributes":{"short_description":"Automated Software Deployment","description":"Automated Software Deployment.","assignment_group":"a715cd759f2002002920bde8132e7018","implementation_plan":"Software update is tested and results can be found in Test Summaries Tab.","backout_plan":"When software fails in production, the previous software release will be re-deployed.","test_plan":"Testing if the software was successfully deployed"}}'
+          change-request: '{"setCloseCode":"true","attributes":{"short_description":"Automated Software Deployment","chg_model":"adffaa9e4370211072b7f6be5bb8f2ed","description":"Automated Software Deployment.","assignment_group":"a715cd759f2002002920bde8132e7018","implementation_plan":"Software update is tested and results can be found in Test Summaries Tab.","backout_plan":"When software fails in production, the previous software release will be re-deployed.","test_plan":"Testing if the software was successfully deployed"}}'
           interval: '100'
           timeout: '3600'
       - name: Run deployment scripts
         run: echo Completed Deployment.
+        
