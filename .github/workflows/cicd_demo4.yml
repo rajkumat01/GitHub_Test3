@@ -4,7 +4,7 @@ on: push
 jobs:
   build:
     name: Build
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
             SONAR_ORG_KEY: ${{ secrets.SONAR_ORG_KEY }}
             
       - name: ServiceNow DevOps Sonar Scan Results
-        uses: ServiceNow/servicenow-devops-sonar@main
+        uses: ServiceNow/servicenow-devops-sonar@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -63,7 +63,7 @@ jobs:
   integrationTest:
     needs: build
     name: Integration Tests
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:  
       - name: Register Artifact
         uses: ServiceNow/servicenow-devops-register-artifact@v1.34.2
@@ -91,7 +91,7 @@ jobs:
   deploy:
     needs: integrationTest
     name: Deploy
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:     
       - name: Custom Change
         uses: ServiceNow/servicenow-devops-change@dev
