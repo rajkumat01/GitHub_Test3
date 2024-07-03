@@ -251,3 +251,7 @@ java.net.SocketTimeoutException: Read timed out
 2024-07-03 19:31:58,366 INFO o.a.j.t.JMeterThread: Thread finished: BitBucket 5-1
 2024-07-03 19:32:00,766 INFO o.a.j.t.JMeterThread: Thread is done: TableAPI 6-1
 2024-07-03 19:32:00,767 INFO o.a.j.t.JMeterThread: Thread finished: TableAPI 6-1
+2024-07-03 19:35:31,944 INFO o.a.j.t.JMeterThread: Thread is done: Gitlab 2-1
+2024-07-03 19:35:31,945 INFO o.a.j.t.JMeterThread: Thread finished: Gitlab 2-1
+2024-07-03 19:43:56,480 INFO o.a.j.t.JMeterThread: Thread is done: ADO 3-1
+2024-07-03 19:43:56,482 INFO o.a.j.t.JMeterThread: Thread finished: ADO 3-1
