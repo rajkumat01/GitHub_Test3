@@ -169,3 +169,14 @@ java.net.SocketTimeoutException: Read timed out
 2024-07-03 12:38:13,717 INFO o.a.j.t.JMeterThread: Thread finished: Gitlab 2-1
 2024-07-03 12:45:36,155 INFO o.a.j.t.JMeterThread: Thread is done: ADO 3-1
 2024-07-03 12:45:36,156 INFO o.a.j.t.JMeterThread: Thread finished: ADO 3-1
+2024-07-03 13:21:52,255 INFO o.a.j.t.JMeterThread: Thread is done: Jenkins 4-1
+2024-07-03 13:21:52,256 INFO o.a.j.t.JMeterThread: Thread finished: Jenkins 4-1
+2024-07-03 13:21:52,259 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-07-03 13:21:52,260 INFO o.a.j.s.FileServer: Close: ADO_Commit.csv
+2024-07-03 13:21:52,260 INFO o.a.j.s.FileServer: Close: ADO_pipeline_steps.csv
+2024-07-03 13:21:52,260 INFO o.a.j.s.FileServer: Close: pipeline_steps.csv
+2024-07-03 13:21:52,260 INFO o.a.j.s.FileServer: Close: Sonar_scanID.csv
+2024-07-03 13:21:52,260 INFO o.a.j.s.FileServer: Close: GitLab_Pipeline_Numbers.csv
+2024-07-03 13:21:52,261 INFO o.a.j.s.FileServer: Close: Participants.csv
+2024-07-03 13:21:52,261 INFO o.a.j.s.FileServer: Close: ADO_sn_devops_pipeline.csv
+2024-07-03 13:21:52,274 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
