@@ -266,3 +266,98 @@ java.net.SocketTimeoutException: Read timed out
 2024-07-03 19:52:29,011 INFO o.a.j.s.FileServer: Close: Participants.csv
 2024-07-03 19:52:29,011 INFO o.a.j.s.FileServer: Close: ADO_sn_devops_pipeline.csv
 2024-07-03 19:52:29,014 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2024-07-05 10:39:50,038 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-07-05 10:39:50,038 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-07-05 10:39:50,057 INFO c.b.c.RandomCSVReader: Start reading the file: /Users/rajkumar.tunuguntla/Downloads/SN_Devops_Repository_GitlabSNC.csv
+2024-07-05 10:39:50,108 INFO c.b.c.RandomCSVReader: Reading finished. Found 20160 records in your csv file
+2024-07-05 10:39:50,108 INFO c.b.c.RandomCSVReader: Start reading the file: /Users/rajkumar.tunuguntla/Downloads/SN_Devops_Repository_GitlabSNC.csv
+2024-07-05 10:39:50,159 INFO c.b.c.RandomCSVReader: Reading finished. Found 20160 records in your csv file
+2024-07-05 10:39:50,159 INFO c.b.c.RandomCSVReader: Start reading the file: /Users/rajkumar.tunuguntla/Downloads/sn_devops_pipeline.csv
+2024-07-05 10:39:50,160 INFO c.b.c.RandomCSVReader: Reading finished. Found 651 records in your csv file
+2024-07-05 10:39:50,160 INFO c.b.c.RandomCSVReader: Start reading the file: /Users/rajkumar.tunuguntla/Downloads/SN_Devops_Repository_GitlabSNC.csv
+2024-07-05 10:39:50,210 INFO c.b.c.RandomCSVReader: Reading finished. Found 20160 records in your csv file
+2024-07-05 10:39:50,210 INFO c.b.c.RandomCSVReader: Start reading the file: /Users/rajkumar.tunuguntla/Downloads/SN_Devops_Repository_GitlabSNC.csv
+2024-07-05 10:39:50,260 INFO c.b.c.RandomCSVReader: Reading finished. Found 20160 records in your csv file
+2024-07-05 10:39:50,260 INFO c.b.c.RandomCSVReader: Start reading the file: /Users/rajkumar.tunuguntla/Downloads/SN_Devops_Repository_GitlabSNC.csv
+2024-07-05 10:39:50,311 INFO c.b.c.RandomCSVReader: Reading finished. Found 20160 records in your csv file
+2024-07-05 10:39:50,312 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2024-07-05 10:39:50,381 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Jira
+2024-07-05 10:39:50,381 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Jira.
+2024-07-05 10:39:50,381 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2024-07-05 10:39:50,381 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=18 delayedStart=false
+2024-07-05 10:39:50,382 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-07-05 10:39:50,382 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Gitlab
+2024-07-05 10:39:50,382 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Gitlab.
+2024-07-05 10:39:50,382 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2024-07-05 10:39:50,382 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=18 delayedStart=false
+2024-07-05 10:39:50,382 INFO o.a.j.t.JMeterThread: Thread started: Jira 1-1
+2024-07-05 10:39:50,382 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2024-07-05 10:39:50,382 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : ADO
+2024-07-05 10:39:50,382 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group ADO.
+2024-07-05 10:39:50,382 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2024-07-05 10:39:50,382 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=18 delayedStart=false
+2024-07-05 10:39:50,382 INFO o.a.j.t.JMeterThread: Thread started: Gitlab 2-1
+2024-07-05 10:39:50,383 INFO o.a.j.s.FileServer: Stored: GitLab_Pipeline_Numbers.csv
+2024-07-05 10:39:50,385 INFO o.a.j.s.FileServer: Stored: Participants.csv
+2024-07-05 10:39:50,385 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2024-07-05 10:39:50,385 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : Jenkins
+2024-07-05 10:39:50,385 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Jenkins.
+2024-07-05 10:39:50,385 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2024-07-05 10:39:50,385 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=1 ramp-up=18 delayedStart=false
+2024-07-05 10:39:50,385 INFO o.a.j.s.FileServer: Stored: ADO_pipeline_steps.csv
+2024-07-05 10:39:50,386 INFO o.a.j.s.FileServer: Stored: ADO_sn_devops_pipeline.csv
+2024-07-05 10:39:50,386 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2024-07-05 10:39:50,386 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : BitBucket
+2024-07-05 10:39:50,386 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group BitBucket.
+2024-07-05 10:39:50,386 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2024-07-05 10:39:50,386 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=1 ramp-up=18 delayedStart=false
+2024-07-05 10:39:50,387 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2024-07-05 10:39:50,387 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 6 : TableAPI
+2024-07-05 10:39:50,387 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group TableAPI.
+2024-07-05 10:39:50,387 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2024-07-05 10:39:50,386 INFO o.a.j.t.JMeterThread: Thread started: ADO 3-1
+2024-07-05 10:39:50,387 INFO o.a.j.t.ThreadGroup: Starting thread group... number=6 threads=1 ramp-up=18 delayedStart=false
+2024-07-05 10:39:50,387 INFO o.a.j.t.JMeterThread: Thread started: BitBucket 5-1
+2024-07-05 10:39:50,387 INFO o.a.j.t.ThreadGroup: Started thread group number 6
+2024-07-05 10:39:50,387 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-07-05 10:39:50,387 INFO o.a.j.s.FileServer: Stored: ADO_Commit.csv
+2024-07-05 10:39:50,387 INFO o.a.j.t.JMeterThread: Thread started: TableAPI 6-1
+2024-07-05 10:39:50,388 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing AuthManager HTTP Authorization Manager superseded by HTTP Authorization Manager
+2024-07-05 10:39:50,388 INFO o.a.j.t.JMeterThread: Thread started: Jenkins 4-1
+2024-07-05 10:39:50,388 INFO o.a.j.s.FileServer: Stored: Sonar_scanID.csv
+2024-07-05 10:39:50,389 INFO o.a.j.s.FileServer: Stored: pipeline_steps.csv
+2024-07-05 10:39:52,616 INFO o.a.j.e.J.JSR223 PostProcessor: >>>>>>>>>>>>136127679
+2024-07-05 10:39:52,617 INFO o.a.j.e.J.JSR223 PostProcessor: >>>>>>>>>>>>136127680
+2024-07-05 10:39:52,617 INFO o.a.j.e.J.JSR223 PostProcessor: >>>>>>>>>>>>136127681
+2024-07-05 10:40:48,105 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 400 for URL: https://perfdevops1.service-now.com/api/sn_devops/v1/devops/tool/orchestration?toolId=0c0eb4331b907d10a09464a5ec4bcba4
+2024-07-05 10:40:48,106 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 400 for URL: https://perfdevops1.service-now.com/api/sn_devops/v1/devops/tool/orchestration?toolId=0c0eb4331b907d10a09464a5ec4bcba4
+2024-07-05 10:40:48,107 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 400
+2024-07-05 10:40:48,112 INFO o.a.j.t.JMeterThread: Thread is done: Jenkins 4-1
+2024-07-05 10:40:48,112 INFO o.a.j.t.JMeterThread: Thread finished: Jenkins 4-1
+2024-07-05 10:40:49,379 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: https://perfdevops1.service-now.com/api/sn_devops/v2/devops/tool/event/cd3c55a01b33e110a09464a5ec4bcbd7?ni.nolog.token=c2qd7llo6x4IgNO99vFqGGWQ5LUUUFT3
+2024-07-05 10:40:49,379 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: https://perfdevops1.service-now.com/api/sn_devops/v2/devops/tool/event/cd3c55a01b33e110a09464a5ec4bcbd7?ni.nolog.token=c2qd7llo6x4IgNO99vFqGGWQ5LUUUFT3
+2024-07-05 10:40:49,379 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2024-07-05 10:40:49,381 INFO o.a.j.t.JMeterThread: Thread is done: BitBucket 5-1
+2024-07-05 10:40:49,381 INFO o.a.j.t.JMeterThread: Thread finished: BitBucket 5-1
+2024-07-05 10:40:59,138 ERROR o.a.j.u.BeanShellInterpreter: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``int i = Integer.parseInt(vars.get(258691300).trim());'' : Typed variable declaration : Error in method invocation: Method get( int ) not found in class'org.apache.jmeter.threads.JMeterVariables'
+2024-07-05 10:40:59,138 WARN o.a.j.m.BeanShellPreProcessor: Problem in BeanShell script. org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``int i = Integer.parseInt(vars.get(258691300).trim());'' : Typed variable declaration : Error in method invocation: Method get( int ) not found in class'org.apache.jmeter.threads.JMeterVariables'
+2024-07-05 10:41:00,963 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 400 for URL: https://perfdevops1.service-now.com/api/sn_devops/v1/devops/tool/plan?toolId=d47599e81bffa110a09464a5ec4bcba7&projectId=1d85992c1bffa110a09464a5ec4bcb3f
+2024-07-05 10:41:00,964 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 400 for URL: https://perfdevops1.service-now.com/api/sn_devops/v1/devops/tool/plan?toolId=d47599e81bffa110a09464a5ec4bcba7&projectId=1d85992c1bffa110a09464a5ec4bcb3f
+2024-07-05 10:41:00,964 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 400
+2024-07-05 10:41:00,969 INFO o.a.j.t.JMeterThread: Thread is done: ADO 3-1
+2024-07-05 10:41:00,969 INFO o.a.j.t.JMeterThread: Thread finished: ADO 3-1
+2024-07-05 10:41:05,868 INFO o.a.j.t.JMeterThread: Thread is done: TableAPI 6-1
+2024-07-05 10:41:05,869 INFO o.a.j.t.JMeterThread: Thread finished: TableAPI 6-1
+2024-07-05 10:41:09,468 INFO o.a.j.t.JMeterThread: Thread is done: Jira 1-1
+2024-07-05 10:41:09,469 INFO o.a.j.t.JMeterThread: Thread finished: Jira 1-1
+2024-07-05 10:44:47,759 INFO o.a.j.t.JMeterThread: Thread is done: Gitlab 2-1
+2024-07-05 10:44:47,760 INFO o.a.j.t.JMeterThread: Thread finished: Gitlab 2-1
+2024-07-05 10:44:47,763 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-07-05 10:44:47,763 INFO o.a.j.s.FileServer: Close: ADO_Commit.csv
+2024-07-05 10:44:47,763 INFO o.a.j.s.FileServer: Close: ADO_pipeline_steps.csv
+2024-07-05 10:44:47,764 INFO o.a.j.s.FileServer: Close: pipeline_steps.csv
+2024-07-05 10:44:47,764 INFO o.a.j.s.FileServer: Close: Sonar_scanID.csv
+2024-07-05 10:44:47,764 INFO o.a.j.s.FileServer: Close: GitLab_Pipeline_Numbers.csv
+2024-07-05 10:44:47,764 INFO o.a.j.s.FileServer: Close: Participants.csv
+2024-07-05 10:44:47,764 INFO o.a.j.s.FileServer: Close: ADO_sn_devops_pipeline.csv
+2024-07-05 10:44:47,766 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
